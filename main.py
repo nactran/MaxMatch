@@ -35,6 +35,7 @@ def wordToken(strList,dic):
                     if(re.match(r"^[0-9]*$",w1)):
                         s2 =s2+ w1 + '/'
                         strList = strList[len(w1List):]
+                        break
                     elif w1 in dic:
                         s2 =s2+ w1 + '/'
                         strList = strList[w1Len:]
